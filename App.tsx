@@ -1,20 +1,20 @@
-import React from 'react';
-import { StripeProvider } from '@stripe/stripe-react-native';
-import AppNavigator from './src/navigation/AppNavigator';
-import { UserProvider } from './src/contexts/UserContext';
-import { GroupProvider } from './src/contexts/GroupContext';
-
-// TODO: Replace with your actual Stripe publishable key
-const STRIPE_PUBLISHABLE_KEY = 'pk_test_your_key_here';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <StripeProvider publishableKey={STRIPE_PUBLISHABLE_KEY}>
-      <UserProvider>
-        <GroupProvider>
-          <AppNavigator />
-        </GroupProvider>
-      </UserProvider>
-    </StripeProvider>
+    <View style={styles.container}>
+      <Text>Open up App.tsx to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

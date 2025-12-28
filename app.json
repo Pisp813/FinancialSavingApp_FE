@@ -26,12 +26,5 @@
     "web": {
       "favicon": "./assets/favicon.png"
     }
-    // "plugins": [
-    //   "@stripe/stripe-react-native",
-    //   {
-    //     "merchantIdentifier": "merchant.com.financialsaving.placeholder",
-    //     "enableGooglePay": false
-    //   }
-    // ]
   }
 }
